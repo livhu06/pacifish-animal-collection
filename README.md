@@ -1,1 +1,1 @@
-# pacifish-animal-collection
+# animal-collections

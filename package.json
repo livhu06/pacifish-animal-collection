@@ -56,5 +56,6 @@
   },
   "description": "An Ionic project",
   "main": "karma.conf.js",
+  "keywords": [],
   "license": "ISC"
 }
