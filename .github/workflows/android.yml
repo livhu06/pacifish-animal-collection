@@ -22,5 +22,4 @@ jobs:
 
       - name: Run unit tests
         working-directory: ./android/
-        run: ./gradlew
         run:  ./gradlew clean testDebug
