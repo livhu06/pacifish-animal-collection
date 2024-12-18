@@ -18,7 +18,7 @@ jobs:
           cache: 'gradle'
 
       - name: Grant execute permissions for gradlew
-        run: chmod +x ./android/gradle/gradlew
+        run: chmod +x ./android/gradlew
 
       - name: Run unit tests
-        run:  ./android/gradlew clean testDebug
+        run:  ./gradlew clean testDebug
