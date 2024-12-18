@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    dynamicFeatures = [':dynamicfeature']
     namespace "com.example.app"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
