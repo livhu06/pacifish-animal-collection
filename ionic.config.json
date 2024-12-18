@@ -1,5 +1,7 @@
 {
   "name": "animal-collection",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
