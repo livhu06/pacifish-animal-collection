@@ -1,0 +1,104 @@
+ion-row{
+    margin: 2vh 0 2vh 0;
+    .animal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(250, 243, 234);
+        border: 8px solid rgb(229, 215, 193) ;
+        border-radius: 5%;
+        margin-bottom: 30px;
+        margin-top: 5px;
+        padding:20px;
+    
+        
+        ion-thumbnail{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5%;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+            img {
+                border-radius: 5%;
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+        
+        ion-card-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            height: 72px;
+            width: 100%;
+            text-transform: uppercase;
+            color: rgb(134, 123, 108);
+            font-size: 45px;
+            background-color: rgb(229, 215, 193);
+            font-family: 'Comic Sans MS', cursive;
+            font-weight: bold;
+    
+            ion-text {
+               font-size: 2.4rem;
+            }
+        }
+        
+    
+    }
+
+}
+
+
+
+
+
+
+ion-card.info{
+    // height: 484px;
+    // width: 335px;
+    padding: 20px;   
+}
+
+ion-card-subtitle, .span{
+    color: #000;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bolder;
+    font-size: large;
+}
+
+ion-card-content{
+    color: #1b1a1a;
+    font-size:medium;
+}
+
+.diet{
+    color: rgb(255, 94, 0);
+    
+}
+
+.span{
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.habitat-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.habitat{
+    color: rgb(14, 192, 14);
+}
+
+.size-range{
+    color: #10b6bf;
+}
+
+.lifespan{
+    color: rgb(181, 46, 181);
+}
