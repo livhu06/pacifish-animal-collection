@@ -29,25 +29,30 @@ ion-row{
             
         }
         
-        ion-card-title{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 15px;
-            height: 72px;
+      
+        .animal-title {
+            display: block;
+            text-align: center;
+            padding: 8px;
+            font-size: 1.2rem; 
+            overflow: hidden; 
             width: 100%;
+            height: 72px;
             text-transform: uppercase;
-            color: rgb(134, 123, 108);
-            font-size: 45px;
-            background-color: rgb(229, 215, 193);
+            font-weight: bolder;
             font-family: 'Comic Sans MS', cursive;
-            font-weight: bold;
-    
-            ion-text {
-               font-size: 2.4rem;
-            }
-        }
-        
+            letter-spacing: 1px;
+            background-color: rgb(229, 215, 193);
+            border-radius: 15px;
+            font-size: 1.8rem;
+            color: rgb(160, 137, 99) ;
+          }
+          
+          ion-card-title {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+          }
     
     }
 
@@ -86,9 +91,19 @@ ion-card-content{
     font-size: medium;
 }
 
-.habitat-line{
+div.habitat{
+  display: flex;
+  justify-content:space-between;
+}
+
+ion-icon {
+    font-size: 1.5rem;
+    margin-right: 5px;
+   
+}
+.end {
     display: flex;
-    justify-content: space-between;
+   
 }
 
 .habitat{

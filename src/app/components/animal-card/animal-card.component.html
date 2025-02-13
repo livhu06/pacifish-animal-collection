@@ -1,13 +1,13 @@
-@for(animal of animals; track $index) {
+
   <ion-row>
     <ion-col size="12">
       <ion-card class="animal" >
         <ion-thumbnail>
-          <img [src]="animal.imageUrl" >
+          <img [src]="imageUrl" >
         </ion-thumbnail>
         
         <ion-card-title> 
-          <ion-text> {{animal.title}} </ion-text>
+          <ion-text class="animal-title"> {{title}} </ion-text>
         </ion-card-title>
       </ion-card>
     </ion-col>
@@ -15,25 +15,32 @@
     <ion-col size="12">
       <ion-card class="info">
         <ion-card-subtitle class="diet">Diet</ion-card-subtitle>
-        <ion-card-content> {{animal.diet}} </ion-card-content>
+        <ion-card-content> {{diet}} </ion-card-content>
         
-        <div class="habitat-line">
+        <div class="habitat">
           <ion-card-subtitle class="habitat">Habitat</ion-card-subtitle> 
-          <!-- <ion-icon name="Herbivore"></ion-icon> -->
-        <ion-card-subtitle>{{animal.family}}</ion-card-subtitle>
+          <div class="end">
+            @if(family == 'Herbivore'){
+              <ion-icon class="family_icon" name="fast-food-outline" color="dark"></ion-icon>
+          } @else {
+              <!-- <ion-icon name="Carnivore" color="dark"></ion-icon> -->
+          }
+        <ion-card-subtitle>{{family}}</ion-card-subtitle>
+          </div>
+
+
         </div>
         
-        <ion-card-content> {{animal.habitat}} </ion-card-content>
+        <ion-card-content> {{habitat}} </ion-card-content>
         
         <ion-card-subtitle class="size-range">Size Range</ion-card-subtitle>
-        <ion-card-content> {{animal.sizeRange}} </ion-card-content>
+        <ion-card-content> {{sizeRange}} </ion-card-content>
     
         <ion-card-subtitle class="lifespan">Lifespan</ion-card-subtitle>
-        <ion-card-content> {{animal.lifespan}} </ion-card-content>
+        <ion-card-content> {{lifespan}} </ion-card-content>
     
       </ion-card>
     </ion-col>
      
     
   </ion-row>
-}
