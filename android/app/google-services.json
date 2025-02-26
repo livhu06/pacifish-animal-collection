@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "212541572081",
+    "firebase_url": "https://pacifish-animal-collecti-b617a-default-rtdb.firebaseio.com",
+    "project_id": "pacifish-animal-collecti-b617a",
+    "storage_bucket": "pacifish-animal-collecti-b617a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212541572081:android:526f7c7db5e5e5715efa50",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212541572081-vh0m36m484qea4svtjvjo04spr620r7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu2A0CNQHMBnB7fBzWmLdrWL84l__6c2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212541572081-vh0m36m484qea4svtjvjo04spr620r7r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
