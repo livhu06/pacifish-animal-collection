@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ProfileSectionComponent } from 'src/app/components/profile-section/profile-section.component';
 import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
-import { profile } from '../../data/profile';
+import { CartService } from '../../services/cart.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
@@ -13,19 +13,17 @@ import { profile } from '../../data/profile';
 })
 export class HomePage implements OnInit {
 
- profiles: any[] =[];
- totalItem:number = 10;
+  totalAnimals: number = 10;
+  private cartService = new CartService();
 
   badges = [
-    { id: 1, icon: 'ribbon', number: 1, color: 'success' },
-    { id: 2, icon: 'ribbon', number: 2, color: 'secondary' },
-    { id: 3, icon: 'ribbon', number: 3, color: 'success' }
+    { id: 1, imageUrl: "assets/pictures/badge1.png", number: 1 },
+    { id: 2, imageUrl: "assets/pictures/badge2.png", number: 2 },
+    { id: 3, imageUrl: "assets/pictures/badge3.png", number: 3 }
   ];
 
   constructor() { }
 
   ngOnInit() {
-    this.profiles =[ ...profile];
   }
-
 }

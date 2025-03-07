@@ -15,6 +15,6 @@ import { ScanPage } from './scan.page';
     IonicModule,
     ScanPageRoutingModule
   ],
-  declarations: [ScanPage]
+  declarations: []
 })
 export class ScanPageModule {}

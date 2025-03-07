@@ -3,101 +3,113 @@ ion-content{
     ion-list{
       background: transparent;
     }
-    h3{
-      font-family: 'Comic Sans MS', cursive;
-      color: white;
+
+    .welcome {
+      position: absolute;
+      top: 240px;
     }
-  
     .welcome-message{
-      font-family: 'Comic Sans MS', cursive;
+      font-family: 'Permanent Marker', cursive;
       color: white;
       text-transform: uppercase;
       font-size: 18px;
-      font-weight: bold;
+      font-weight: 400;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
       width: 200px;
       height: 57px;
-      margin-top: 150px;
-      margin-left: 14px;
-      margin-bottom: 100px;
-    
+      height: 57px;
     }
 
-//Badges section
-ion-card {
-    
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  height: 195px;
-
-
-  .section-header {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-
-    
-    h3 {
-      margin: 0;
-      font-size: 18px;
-      font-weight: bold;
-      font-family: 'Comic Sans MS', cursive;
-      color: #000;
+    .trees {
+      position: relative;
+      width: 318px;
+      height: 188px;
+      top: -40px
     }
-    ion-button{
-      color: #000;
-      text-transform: initial;
-      font-weight:bold;
+
+    .girlScout {
+      position: absolute;
+      width: 65.13px;
+      height: 100px;
+      top: 111px;
+      left: 280px;
+    }
+    .pathTop {
+      position: relative;
+      width: 326px;
+      height: 336px;
+      top: -51px;
+      left: 5px;
+    }
+    .pathBottom {
+      position: relative;
+      width: 326px;
+      height: 336px;
+      top: -40px;
+      left: 19px;
+    }
+
+    .rewards{
+      position: absolute;
+      top: 395px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    ion-card {
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      height: 195px;
+
+      .section-header {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    
+      h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Permanent Marker', cursive;
+        color: #000;
+      }
+      ion-button{
+        color: #000;
+        text-transform: initial;
+        font-weight:bold;
+      }
     }
   }
-}
 
-.badges-container {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: space-around;
-  padding-left: 5px;
-  padding-right: 5px;
-
+  .badges-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 5px;
+    padding-right: 5px;
 
   .badge-item {
-    position: relative;
     width: 90px;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-    ion-icon {
-      font-size: 100px; 
-      color: greenyellow;
-
-    }
-
-    .badge-number {
-      position: absolute;
-      top: 22px;
-      left: 22px;
-      border-radius: 50%;
-      width: 20px;
-      height: 4px;
-      font-size: 12px;
-      font-weight: bold;
-      color: white;
-    }
   }
 }
 
-          
+.collection-quiz{
+  position: absolute;
+  top: 602px;
+  left: 0;
+  right: 0;
+}
 
-// collection card and quizzes card
 .cards {
   display: grid;
   gap: 2px;
   grid-template-columns: 1fr 1fr;
-
 }
 
 .collection-container, .quizzes-container{
@@ -110,31 +122,46 @@ ion-card {
   font-family: 'Comic Sans MS', cursive;
   height: 200px;
  
-
   h3{
     color: white;
-    font-size: 0.76rem;
-    font-weight: 800;
+    font-size: 0.89rem;
+    font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
   }
-}
-
-.collection-container:hover, .quizzes-container:hover {
-  transform: scale(1.05);
 }
 
 .quizzes-container{
   background-color: #4ff1e6;
 
-
-    h3{
-      color: rgb(15, 199, 245);
-      font-weight: bold;
-      text-transform: uppercase;
-      
+  img{
+    width: 139px;
+    height: 94px;
+    
+  }
+  h3{
+    color: rgb(15, 199, 245);
+    font-weight: bold;
+    text-transform: uppercase;
+    }
   }
 }
+  
 
-  }
-  
-  
+.colcard2 , .colcard3{
+  margin-left: -69px;
+}
+
+.colcard2 {
+  margin-top: 15px;
+}
+
+.colcard3 {
+  margin-top: 35px;
+}
+
+.collectionCards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }

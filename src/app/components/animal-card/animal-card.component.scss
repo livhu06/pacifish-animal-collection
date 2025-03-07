@@ -1,79 +1,25 @@
 ion-row{
-    margin: 2vh 0 2vh 0;
-    .animal{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: rgb(250, 243, 234);
-        border: 8px solid rgb(229, 215, 193) ;
-        border-radius: 5%;
-        margin-bottom: 30px;
-        margin-top: 5px;
-        padding:20px;
-    
-        
-        ion-thumbnail{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 5%;
-            width: 100%;
-            height: 100%;
-            margin-bottom: 10px;
-            img {
-                border-radius: 5%;
-                width: 100%;
-                height: 100%;
-            }
-            
-        }
-        
-      
-        .animal-title {
-            display: block;
-            text-align: center;
-            padding: 8px;
-            font-size: 1.2rem; 
-            overflow: hidden; 
-            width: 100%;
-            height: 72px;
-            text-transform: uppercase;
-            font-weight: bolder;
-            font-family: 'Comic Sans MS', cursive;
-            letter-spacing: 1px;
-            background-color: rgb(229, 215, 193);
-            border-radius: 15px;
-            font-size: 1.8rem;
-            color: rgb(160, 137, 99) ;
-          }
-          
-          ion-card-title {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-          }
-    
+    margin: 15px 0; 
+    img {
+        width: 332px;
+        height: 487px;
     }
-
 }
 
-
-
-
-
-
 ion-card.info{
-    // height: 484px;
-    // width: 335px;
     padding: 20px;   
+    width: 320px;
+    height: 520px;
+    right: 10px;   
 }
 
 ion-card-subtitle, .span{
     color: #000;
-    font-family: 'Comic Sans MS', cursive;
-    font-weight: bolder;
-    font-size: large;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.19px;
 }
 
 ion-card-content{
@@ -86,25 +32,21 @@ ion-card-content{
     
 }
 
-.span{
-    text-transform: uppercase;
-    font-size: medium;
-}
-
-div.habitat{
-  display: flex;
-  justify-content:space-between;
-}
-
-ion-icon {
-    font-size: 1.5rem;
-    margin-right: 5px;
-   
-}
-.end {
+.family-class{
     display: flex;
-   
-}
+    justify-content: space-between;
+ }
+ 
+ .family-img{
+     width: 35px;
+     height: 30px;
+     
+ }
+ 
+ .habitat-line{
+     display: flex;
+     justify-content: space-between;
+ }
 
 .habitat{
     color: rgb(14, 192, 14);

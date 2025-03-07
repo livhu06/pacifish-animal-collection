@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { profile } from 'src/app/pages/data/profile';
 import { IonFabButton } from "@ionic/angular/standalone";
 import { RouterLink } from '@angular/router';
 
@@ -13,11 +12,10 @@ imports: [IonFabButton, RouterLink],
 })
 export class ProfileSectionComponent  implements OnInit {
  
-  profiles: any[] = [];
   constructor() { }
 
   ngOnInit() {
-    this.profiles = [...profile]
+  
   }
 
 }

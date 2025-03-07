@@ -1,54 +1,53 @@
 <ion-content class="ion-padding">
-  <!-- Profile Section -->
+
 <app-profile-section></app-profile-section>
 
+<ion-img class="trees" src="assets/pictures/trees.png"></ion-img>
+  <ion-img class="girlScout" src="assets/pictures/girlScout.svg"></ion-img>
 
-  <!--Background Section-->
- <ion-list class="welcome">
-   @for(profile of profiles; track $index){
-     <div class="welcome-message">
-       Hi {{profile?.name}}, let's explore our wonderful world
-     </div>
-   }
- 
- </ion-list>
-   
+  <ion-list class="welcome">
+      <div class="welcome-message">
+        Hi Michaela, let's explore our wonderful world
+      </div>
+  </ion-list>
+
+  <ion-img class="pathTop"  src="assets/pictures/path.png"></ion-img>
+  <ion-img class="pathBottom" src="assets/pictures/path2.png"></ion-img>
 
 <ion-list class="rewards">
- <ion-card class="ion-margin">
+ <ion-card>
    <ion-card-header class="section-header">
        <h3>My Badges</h3>
        <ion-button fill="clear" size="small" routerLink="badges">See All →</ion-button>
    </ion-card-header>
  
    <ion-card-content class="badges-container">
- 
-     @for (badge of badges; track $index) {
-       <div class="badge-item">
- 
-         <ion-icon [name]="badge.icon" [color]="badge.color"></ion-icon>
-   
-         <span class="badge-number">{{badge.number}}</span>
-       </div>
-     }
+    @for (badge of badges; track $index) {
+      <div class="badge-item">  
+        <ion-img [src]="badge.imageUrl"></ion-img>
+      </div>
+    }
    </ion-card-content>
  </ion-card >
 </ion-list>
-
-
-
 
  <ion-list class="collection-quiz">
    <div class="cards">
      <ion-card class="collection-container" routerLink="collection">
        <ion-card-content >
            <h3>My Collection</h3>
+           <ion-col class="ion-no-padding collectionCards">
+            <ion-img class="colcard" src="assets/pictures/green.png"></ion-img>
+            <ion-img class="colcard2" src="assets/pictures/blue.png"></ion-img> 
+            <ion-img class="colcard3" src="assets/pictures/brown.png"></ion-img>
+          </ion-col>
          </ion-card-content>
        </ion-card>
      
        <ion-card class="quizzes-container" routerLink="quizzes">
          <ion-card-content >
              <h3>Quizzes</h3>
+             <img src="assets/pictures/quiz.png"> 
          </ion-card-content>
        </ion-card>
    </div >

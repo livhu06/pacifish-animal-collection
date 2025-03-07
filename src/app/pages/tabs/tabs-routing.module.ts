@@ -18,6 +18,10 @@ const routes: Routes = [
         loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
       },
       {
+        path: 'collection',  
+        loadChildren: () => import('./home/collection/collection.module').then(m => m.CollectionPageModule)
+      },
+      {
         path: 'notifications',
         loadChildren: () => import('./notifications/notifications.module').then( m => m.NotificationsPageModule)
       },
@@ -31,8 +35,6 @@ const routes: Routes = [
       }
     ]
   },
- 
-
 ];
 
 @NgModule({
