@@ -1,5 +1,6 @@
 export interface Animal
     {
+      id: string,
       imageUrl: string,
       title: string,
       diet: string,
@@ -10,4 +11,5 @@ export interface Animal
       audioUrl?: string,
       videoUrl?: string,
       locations?: string[];
+      barcode: string;
     }

@@ -10,7 +10,7 @@ import { NavController } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule],
 })
-export class TabsPage implements OnInit {
+export class TabsPage implements OnInit, OnDestroy {
 
   totalItems: number = 0; 
   cartSub!: Subscription;
@@ -33,6 +33,7 @@ export class TabsPage implements OnInit {
   setCurrentTab() {
     this.selectedTab = this.tabs.getSelected();
   }
+  
   async startScan() {
     try {
       const code = await this.cartService.startScan();

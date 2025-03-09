@@ -2,6 +2,7 @@ import { Animal } from "../interfaces/animal.interface";
 
 export const animals: Animal[] = [
     {
+      id: '1',
       imageUrl: 'assets/pictures/Tortoise.png',
       title: 'Tortoise',
       diet: 'Tortoises eat plants such as grasses, leaves, flowers, and fruits.',
@@ -11,9 +12,11 @@ export const animals: Animal[] = [
       lifespan: 'Tortoises can live for more than 100 years.',
       audioUrl: 'assets/audio/tortoise-sound.mp3',
       videoUrl: 'assets/videos/tortoise-video.mp4',
-      locations: ['Kruger', 'Zoo', 'Park']
+      locations: ['Kruger', 'Zoo', 'Park'],
+      barcode: '1234567890123',
     },
     {
+      id: '2',
       imageUrl: 'assets/pictures/Chameleon.png',
       title: 'Chameleon',
       diet: 'Chameleons primarily eat insects, small mammals, reptiles, and other small animals. They are known for hunting snakes.',
@@ -23,9 +26,11 @@ export const animals: Animal[] = [
       lifespan: 'Chameleons can live for about 10 to 15 years in the wild.',
       audioUrl: 'assets/audio/tortoise-sound.mp3',
       videoUrl: 'assets/videos/Chameleon-video.mp4',
-      locations: ['Kruger', 'Zoo', 'Park']
+      locations: ['Kruger', 'Zoo', 'Park'],
+      barcode: '3456789012345',
     },
     {
+      id: '3',
       imageUrl: 'assets/pictures/Penguin.png',
       title: 'Penguin',
       diet: 'Penguins primarily eat fish, squid, and krill.',
@@ -35,9 +40,11 @@ export const animals: Animal[] = [
       lifespan: 'Penguins can live for about 10 to 20 years in the wild.',
       audioUrl: 'assets/audio/tortoise-sound.mp3',
       videoUrl: 'assets/videos/Penguin-video.mp4',
-      locations:['Kruger', 'Zoo', 'Park']
+      locations:['Kruger', 'Zoo', 'Park'],
+      barcode: '5567890123457',
     },
     {
+      id: '4',
       imageUrl: 'assets/pictures/SecretaryBird.png',
       title: 'Secretary Bird',
       diet: 'Secretary birds primarily eat insects small mammals, reptiles, and other small animals. They are known for hunting snakes.',
@@ -47,7 +54,8 @@ export const animals: Animal[] = [
       lifespan: 'Secretary birds can live for about 10 to 15 years in the wild.',
       audioUrl: 'assets/audio/secretaryBird-sound.mp3',
       videoUrl: 'assets/videos/secretaryBird-video.mp4',
-      locations:['Kruger', 'Zoo', 'Park']
+      locations:['Kruger', 'Zoo', 'Park'],
+      barcode: '5678901234578',
     }
   ];
 
