@@ -9,8 +9,7 @@ describe('AnimalCardComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ AnimalCardComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot(), AnimalCardComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(AnimalCardComponent);
