@@ -136,11 +136,9 @@ export class CartService {
 
     if(!data) {
       data = await this.storageService.getStorage(this.cartStoreName);
-      console.log(data);
 
       if (data?.value) {
         this.model = JSON.parse(data.value);
-        console.log(this.model);
         this.cart$.next(this.model);
       }
     }
