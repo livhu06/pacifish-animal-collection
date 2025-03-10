@@ -41,7 +41,7 @@ export class TabsPage implements OnInit, OnDestroy {
 
       this.navCtrl.navigateForward(['/tabs/home/collection']); 
     } catch (e){
-      console.log(e);
+      throw(e);
     }
   }
 
