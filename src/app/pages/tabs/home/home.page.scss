@@ -1,0 +1,140 @@
+ion-content{
+    --background: linear-gradient(180deg, #00BFFF 0%, #64BDDB 46.88%, #8BCCE2 82.81%);
+    ion-list{
+      background: transparent;
+    }
+    h3{
+      font-family: 'Comic Sans MS', cursive;
+      color: white;
+    }
+  
+    .welcome-message{
+      font-family: 'Comic Sans MS', cursive;
+      color: white;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      width: 200px;
+      height: 57px;
+      margin-top: 150px;
+      margin-left: 14px;
+      margin-bottom: 100px;
+    
+    }
+
+//Badges section
+ion-card {
+    
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  height: 195px;
+
+
+  .section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+    
+    h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: 'Comic Sans MS', cursive;
+      color: #000;
+    }
+    ion-button{
+      color: #000;
+      text-transform: initial;
+      font-weight:bold;
+    }
+  }
+}
+
+.badges-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 5px;
+  padding-right: 5px;
+
+
+  .badge-item {
+    position: relative;
+    width: 90px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    ion-icon {
+      font-size: 100px; 
+      color: greenyellow;
+
+    }
+
+    .badge-number {
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      border-radius: 50%;
+      width: 20px;
+      height: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
+
+          
+
+// collection card and quizzes card
+.cards {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.collection-container, .quizzes-container{
+  background-color: rgb(255, 94, 0);
+  border: none;
+  border-radius: 8px;
+  padding-top: 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-family: 'Comic Sans MS', cursive;
+  height: 200px;
+ 
+
+  h3{
+    color: white;
+    font-size: 0.76rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+}
+
+.collection-container:hover, .quizzes-container:hover {
+  transform: scale(1.05);
+}
+
+.quizzes-container{
+  background-color: #4ff1e6;
+
+
+    h3{
+      color: rgb(15, 199, 245);
+      font-weight: bold;
+      text-transform: uppercase;
+      
+  }
+}
+
+  }
+  
+  

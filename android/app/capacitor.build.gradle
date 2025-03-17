@@ -10,8 +10,10 @@ android {
 apply from: "../capacitor-cordova-android-plugins/cordova.variables.gradle"
 dependencies {
     implementation project(':capacitor-app')
+    implementation project(':capacitor-barcode-scanner')
     implementation project(':capacitor-haptics')
     implementation project(':capacitor-keyboard')
+    implementation project(':capacitor-preferences')
     implementation project(':capacitor-status-bar')
   implementation 'com.google.firebase:firebase-crashlytics:19.4.1'
     implementation 'com.google.firebase:firebase-database:21.0.0'

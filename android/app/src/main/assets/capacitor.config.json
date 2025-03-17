@@ -1,5 +1,5 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "animal-collection",
+	"appId": "com.pacifish.animalCollection",
+	"appName": "Animal Collection",
 	"webDir": "www"
 }
