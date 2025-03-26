@@ -11,7 +11,6 @@ import { BadgesPage } from './badges.page';
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     IonicModule,
     BadgesPageRoutingModule
   ],

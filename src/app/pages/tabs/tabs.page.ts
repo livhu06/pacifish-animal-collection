@@ -6,11 +6,11 @@ import { NavController } from '@ionic/angular';
 import { addIcons } from 'ionicons';
 import { homeOutline, notificationsOutline, qrCodeOutline, settingsOutline } from 'ionicons/icons';
 @Component({
-  selector: 'app-tabs',
-  templateUrl: './tabs.page.html',
-  styleUrls: ['./tabs.page.scss'],
-  standalone: true,
-  imports: [IonicModule],
+    selector: 'app-tabs',
+    templateUrl: './tabs.page.html',
+    styleUrls: ['./tabs.page.scss'],
+    standalone: true,
+    imports: [IonicModule]
 })
 export class TabsPage implements OnInit, OnDestroy {
 

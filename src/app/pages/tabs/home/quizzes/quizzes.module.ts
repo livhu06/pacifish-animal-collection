@@ -11,7 +11,6 @@ import { QuizzesPage } from './quizzes.page';
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     IonicModule,
     QuizzesPageRoutingModule
   ],

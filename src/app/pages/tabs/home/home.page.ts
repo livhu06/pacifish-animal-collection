@@ -3,12 +3,11 @@ import { ProfileSectionComponent } from 'src/app/components/profile-section/prof
 import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
-  standalone: true,
-  imports: [ IonicModule, RouterLink, ProfileSectionComponent]
-  
+    selector: 'app-home',
+    templateUrl: './home.page.html',
+    styleUrls: ['./home.page.scss'],
+    standalone: true,
+    imports: [IonicModule, RouterLink, ProfileSectionComponent]
 })
 export class HomePage implements OnInit {
 

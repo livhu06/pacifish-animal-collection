@@ -9,7 +9,6 @@ import { ProfilePageRoutingModule } from './profile-routing.module';
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     IonicModule,
     ProfilePageRoutingModule
   ],

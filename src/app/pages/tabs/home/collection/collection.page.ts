@@ -10,12 +10,11 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { CartService } from 'src/app/pages/services/cart.service';
 @Component({
-  selector: 'app-collection',
-  templateUrl: './collection.page.html',
-  styleUrls: ['./collection.page.scss'],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  standalone: true,
-  imports: [AnimalCardComponent, IonicModule]
+    selector: 'app-collection',
+    templateUrl: './collection.page.html',
+    styleUrls: ['./collection.page.scss'],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    imports: [AnimalCardComponent, IonicModule]
 })
 export class CollectionPage implements OnInit {
 
