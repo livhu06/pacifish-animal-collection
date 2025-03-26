@@ -15,6 +15,6 @@ import { BadgesPage } from './badges.page';
     IonicModule,
     BadgesPageRoutingModule
   ],
-  declarations: [BadgesPage]
+  declarations: []
 })
 export class BadgesPageModule {}

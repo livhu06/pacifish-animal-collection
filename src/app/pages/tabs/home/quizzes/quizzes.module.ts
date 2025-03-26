@@ -15,6 +15,6 @@ import { QuizzesPage } from './quizzes.page';
     IonicModule,
     QuizzesPageRoutingModule
   ],
-  declarations: [QuizzesPage]
+  declarations: []
 })
 export class QuizzesPageModule {}

@@ -1,7 +1,5 @@
 import { Component, OnInit,  Input } from '@angular/core';
 import { IonicModule} from '@ionic/angular';
-import { addIcons } from 'ionicons';
-import { fastFoodOutline, heartCircleOutline } from 'ionicons/icons';
 import { animals } from 'src/app/pages/data/animals';
 @Component({
   selector: 'app-animal-card',
@@ -21,9 +19,7 @@ export class AnimalCardComponent  implements OnInit {
   @Input() lifespan!: string;
   animals: any[] = [];
 
-  constructor() { 
-    addIcons({fastFoodOutline, heartCircleOutline})
-  }
+  constructor() {}
 
   ngOnInit() {
      this.animals = [...animals]

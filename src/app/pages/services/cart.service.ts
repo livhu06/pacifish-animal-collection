@@ -3,16 +3,16 @@ import { CapacitorBarcodeScanner } from '@capacitor/barcode-scanner';
 import { BehaviorSubject } from 'rxjs';
 import { StorageService } from './storage.service';
 import { animals } from '../data/animals';
+import { Animal } from '../interfaces/animal.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
-  [x: string]: any;
 
-  model: any = null;
+  animalModel: any = null;
   cartStoreName = 'barcode_cart';
-  animal_data: any[] = [...animals];
+  animal_data: Animal[] = [...animals];
 
   private cart$ = new BehaviorSubject<any>(null);
 
@@ -48,8 +48,8 @@ export class CartService {
   }
 
   addAnimal(item: any) {
-    if (this.model) {
-      const index = this.model.items.findIndex(
+    if (this.animalModel) {
+      const index = this.animalModel.items.findIndex(
         (data: any) => data.item_id == item.id
       );
   
@@ -72,10 +72,10 @@ export class CartService {
           quantity: 1, 
         };
   
-        this.model.items = [...this.model.items, newItem];
+        this.animalModel.items = [...this.animalModel.items, newItem];
       }
     } else {
-      this.model = {
+      this.animalModel = {
         items: [
           {
             item_id: item?.id,
@@ -99,7 +99,7 @@ export class CartService {
   }
   
   calculate() {
-    const items = this.model.items.filter((item: any) => item.quantity > 0);
+    const items = this.animalModel.items.filter((item: any) => item.quantity > 0);
       if (items.length === 0) {
       this.clearCart();
       return;
@@ -107,28 +107,28 @@ export class CartService {
   
     let totalItem = items.length;
   
-    this.model = {
-      ...this.model,
+    this.animalModel = {
+      ...this.animalModel,
       items,
       totalItem, 
     };
   
-    this.cart$.next(this.model);
+    this.cart$.next(this.animalModel);
   
-    this.saveCart(this.model);
+    this.saveCart(this.animalModel);
   
-    return this.model;
+    return this.animalModel;
   }
   
   clearCart() {
     this.storageService.removeStorage(this.cartStoreName);
-    this.model = null;
+    this.animalModel = null;
     this.cart$.next(null);
   }
 
   saveCart(data: any) {
-    const model = JSON.stringify(data);
-    this.storageService.setStorage(this.cartStoreName, model);
+    const animalModel = JSON.stringify(data);
+    this.storageService.setStorage(this.cartStoreName, animalModel);
   }
 
   async getCart() {
@@ -138,8 +138,8 @@ export class CartService {
       data = await this.storageService.getStorage(this.cartStoreName);
 
       if (data?.value) {
-        this.model = JSON.parse(data.value);
-        this.cart$.next(this.model);
+        this.animalModel = JSON.parse(data.value);
+        this.cart$.next(this.animalModel);
       }
     }
   }

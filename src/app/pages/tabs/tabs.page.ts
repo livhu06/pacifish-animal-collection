@@ -3,6 +3,8 @@ import { IonicModule, IonTabs } from '@ionic/angular';
 import { Subscription } from 'rxjs';
 import { CartService } from '../services/cart.service';
 import { NavController } from '@ionic/angular';
+import { addIcons } from 'ionicons';
+import { homeOutline, notificationsOutline, qrCodeOutline, settingsOutline } from 'ionicons/icons';
 @Component({
   selector: 'app-tabs',
   templateUrl: './tabs.page.html',
@@ -20,6 +22,7 @@ export class TabsPage implements OnInit, OnDestroy {
   @ViewChild('tabs') tabs!: IonTabs;
 
   constructor(private navCtrl: NavController) {
+    addIcons({ notificationsOutline, homeOutline, qrCodeOutline, settingsOutline });
   }
 
   ngOnInit() {
