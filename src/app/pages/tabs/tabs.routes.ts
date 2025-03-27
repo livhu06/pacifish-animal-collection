@@ -1,5 +1,13 @@
 import { Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
+import { NotificationsPage } from './notifications/notifications.page';
+import { ScanPage } from './scan/scan.page';
+import { SettingsPage } from './settings/settings.page';
+import { HomePage } from './home/home.page';
+import { BadgesPage } from './home/badges/badges.page';
+import { CollectionPage } from './home/collection/collection.page';
+import { ProfilePage } from './home/profile/profile.page';
+import { QuizzesPage } from './home/quizzes/quizzes.page';
 
 export const routes: Routes = [
   {
@@ -16,37 +24,37 @@ export const routes: Routes = [
         children: [
           {
             path: '',
-            loadComponent: () => import('./home/home.page').then(m => m.HomePage)
+            component: HomePage
           },
           {
             path: 'badges',
-            loadComponent: () => import('./home/badges/badges.page').then(m => m.BadgesPage)
+            component: BadgesPage
           },
           {
             path: 'collection',
-            loadComponent: () => import('./home/collection/collection.page').then(m => m.CollectionPage)
+            component: CollectionPage
           },
           {
             path: 'profile',
-            loadComponent: () => import('./home/profile/profile.page').then(m => m.ProfilePage)
+            component: ProfilePage
           },
           {
             path: 'quizzes',
-            loadComponent: () => import('./home/quizzes/quizzes.page').then(m => m.QuizzesPage)
+            component: QuizzesPage
           }
         ]
       },
       {
         path: 'notifications',
-        loadComponent: () => import('./notifications/notifications.page').then(m => m.NotificationsPage)
+        component: NotificationsPage
       },
       {
         path: 'scan',
-        loadComponent: () => import('./scan/scan.page').then(m => m.ScanPage)
+        component: ScanPage
       },
       {
         path: 'settings',
-        loadComponent: () => import('./settings/settings.page').then(m => m.SettingsPage)
+        component: SettingsPage
       }
     ]
   }
